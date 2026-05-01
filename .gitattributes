@@ -1,0 +1,13 @@
+﻿# Normalize text files by default
+* text=auto eol=lf
+
+# Windows scripts
+*.ps1 text eol=crlf
+*.bat text eol=crlf
+
+# Binary assets
+*.exe binary
+*.dll binary
+*.pyd binary
+*.ico binary
+*.zip binary

@@ -1,0 +1,28 @@
+[project]
+name = "shadowdl"
+version = "2.3.0"
+description = "Interface Tkinter pour yt-dlp avec FFmpeg embarqué."
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+  "sv-ttk>=2.6.0",
+  "yt-dlp>=2026.3.17",
+]
+
+[project.optional-dependencies]
+build = [
+  "pyinstaller>=6.11",
+]
+
+[project.scripts]
+shadowdl = "shadowdl.app:main"
+
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.uv]
+package = true
